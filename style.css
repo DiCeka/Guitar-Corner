@@ -1,0 +1,454 @@
+p
+{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+li
+{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/*===============ИНДЕКС=================*/
+.index-nav 
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    /*flex: 1;*/
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.index-nav a
+{
+    text-align: center;
+}
+
+.welcome-text p
+{
+    max-width: 500px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 100px;
+    
+    background-color: rgb(230 230 230);
+    border-bottom: 2px solid rgb(126 126 126);
+    
+    padding: 15px 20px;
+}
+
+.index-link
+{
+    display: inline-block;
+    transition: color 0.3s,
+                transform 0.3s,
+    background-color 0.3s;
+
+    background-color: rgb(209 209 209);
+    color: black;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+    text-align: center;
+    
+    border-radius: 20px;
+    border: black solid 2px;
+
+    white-space: nowrap;
+}
+
+.index-link:hover
+{
+    color: rgb(55 47 47);
+    background-color: rgb(204 186 186);
+    transform: scale(1.2);
+}
+
+h1
+{
+    margin: 0;
+    font-size: xx-large;
+    display: flex;
+    font-family: 'Verdana', 'Helvetica', sans-serif;
+    user-select: none;
+}
+
+h2
+{
+    margin: 0;
+    display: flex;
+    font-family: 'Verdana', 'Helvetica', sans-serif;
+    user-select: none;
+}
+
+body
+{
+    margin: 0px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 15px;
+
+    background-color: rgb(30 11 10);
+    color: #ffe4e4;
+}
+
+.footer-nav
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 10px;
+}
+
+.footer-link
+{
+    display: inline-block;
+    transition: color 0.3s,
+background-color 0.3s;
+    
+    text-decoration: none;
+    white-space: nowrap;
+    font: 16px sans-serif;
+    color: #ffe4e4;
+    border-radius: 10px;
+}
+
+.footer-link:hover
+{
+    color: rgb(255 183 183);
+    background-color: rgb(50 28 20);
+}
+
+.copyright
+{
+    user-select: none;
+    white-space: nowrap;
+}
+
+main
+{
+    flex: 1;
+}
+
+.welcome
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 60px;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.welcome-image
+{
+    width: 45%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/*===================-О МАГАЗИНЕ-=============*/
+
+.about-h1
+{
+    white-space: nowrap;
+}
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: 20px 7%;
+}
+
+.about-intro-text h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.about-intro-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.about-shop-image {
+    width: 45%;
+    border-radius: 15px;
+}
+
+.about-services {
+    padding: 30px 7% 50px;
+}
+
+.about-services > h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Контейнер четырёх услуг */
+.services-list {
+    display: flex;
+    gap: 20px;
+}
+
+/* Одна карточка услуги */
+.service {
+    flex: 1;
+
+    padding: 20px;
+
+    background-color: rgb(240 240 240);
+    border-radius: 20px;
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+/*ПОЧИНКА*/
+
+.repair {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    padding: 40px 7% 60px;
+}
+
+.repair-text {
+    flex: 1;
+}
+
+.repair-image {
+    width: 45%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/*===================-КОНТАКТЫ-=============*/
+
+.contacts-main {
+    text-align: center;
+    padding: 40px;
+}
+
+.contacts-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contacts-info p {
+    margin: 0;
+}
+
+/*===================-КАТАЛОГ-=============*/
+
+.catalog {
+    padding: 40px 7%;
+}
+
+.catalog > h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.catalog-list {
+    display: flex;
+    gap: 25px;
+}
+
+.catalog-card {
+    flex: 1;
+
+    border: 2px solid rgb(30 11 10);
+
+    background-color: rgb(240 240 240);
+    border-radius: 15px;
+
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.catalog-card:hover
+{
+    transform: translateY(-10px) scale(1.02);
+}
+
+.catalog-card img {
+    width: 100%;
+    height: 300px;
+/*contain можешь прописать чтобы не отрезало*/
+    object-fit: cover;
+}
+
+.catalog-card h3,
+.catalog-card p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.catalog-card h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.catalog-card p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/*ТАБЛИЧКА*/
+
+.price-section {
+    flex: 1;
+    padding: 0;
+}
+
+
+.price-section h2 {
+    margin-top: 40px;
+}
+
+.price-section table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+}
+
+.price-tables {
+    display: flex;
+    gap: 40px;
+
+    padding: 10px 7% 40px;
+}
+
+.price-section {
+    flex: 1;
+}
+
+.price-section tr {
+    transition: background-color 0.2s;
+}
+
+.price-section tr:hover {
+    background-color: rgb(235 235 235);
+}
+
+.price-section td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgb(200 200 200);
+}
+
+.price-section td:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.price-note {
+    text-align: center;
+    font-style: italic;
+    user-select: none;
+
+    margin: 0 20px 30px;
+}
+
+/*АДАПТИВНАЯ ВЁРСТКА*/
+
+@media (max-width: 700px)
+{
+    .footer-nav
+    {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .about-intro
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-shop-image
+    {
+        width: 100%;
+    }
+
+    .welcome
+    {
+        flex-direction: column;
+
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .welcome-text {
+        width: 100%;
+    }
+
+    .welcome-text p {
+        max-width: 650px;
+    }
+
+    .welcome-image {
+        width: 70%;
+        max-width: 650px;
+        min-width: 400px;
+
+        height: auto;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+
+    .repair {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .repair-image {
+        width: 100%;
+    }
+
+    .catalog-list {
+        flex-direction: column;
+    }
+
+    .catalog-card img {
+        height: 300px;
+    }
+
+    .price-tables {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 666px) {
+    .index-nav {
+        display: none;
+    }
+}
