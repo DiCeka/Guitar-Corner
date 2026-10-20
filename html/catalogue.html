@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +14,14 @@
     <div class="header-content">
         <h1 class = "about-h1">Каталог</h1>
 
-        <nav class = "index-nav">
+        <button class="burger-button" type="button"
+                aria-label="Открыть меню"
+                aria-expanded="false"
+                aria-controls="main-nav">
+            ☰
+        </button>
+
+        <nav class = "index-nav" id = "main-nav">
             <a href = "../index.html" class = "index-link">Главная</a>
             <a href = "about.html" class = "index-link">О магазине</a>
             <a href = "catalogue.html" class = "index-link">Каталог</a>
@@ -144,6 +153,6 @@
     </div>
 </footer>
 
-
+<script src="../js/main.js"></script>
 </body>
 </html>

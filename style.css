@@ -229,7 +229,7 @@ footer {
 }
 
 /*=============-О МАГАЗИНЕ-=============*/
-    q
+
 .about-h1
 {
     white-space: nowrap;
@@ -454,8 +454,60 @@ footer {
 
 /*АДАПТИВНАЯ ВЁРСТКА*/
 
+.burger-button {
+    display: none;
+    font-size: 20px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border-color: var(--border-color);
+
+    transition: background-color 0.2s,
+                transform 0.2s;
+}
+
+.burger-button:hover {
+    background-color: rgb(239 231 231);
+    transform: scale(1.05);
+}
+
 @media (max-width: 700px)
 {
+    .burger-button {
+        display: block;
+    }
+
+    .header-content {
+        position: relative;
+    }
+
+    .index-nav {
+        display: none;
+        z-index: 10;
+
+        position: absolute;
+        top: 100%;
+        right: clamp(3px, 3vw, 25px);
+
+        background-color: white;
+        border: 2px solid rgb(30 11 10);
+        border-radius: 12px;
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .index-nav.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .index-link:hover
+    {
+        background-color: rgb(202 196 196);
+        transform: scale(1.07);
+    }
+
+
+    /*-=====================================-*/
     .footer-nav
     {
         gap: 5px;
@@ -539,8 +591,8 @@ footer {
     }
 }
 
-@media (max-width: 700px) {
-    .index-nav {
-        display: none;
-    }
-}
+/*@media (max-width: 700px) {*/
+/*    .index-nav {*/
+/*        display: none;*/
+/*    }*/
+/*}*/

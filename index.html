@@ -14,13 +14,20 @@
     <header class = "index-header">
         <div class="header-content">
             <h1>Гитарный уголок</h1>
+
+            <button class="burger-button" type="button"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    aria-controls="main-nav">
+                ☰
+            </button>
         
-            <nav class = "index-nav">
+            <nav class = "index-nav" id="main-nav">
                 <a href = "" class = "index-link">Главная</a>
                 <a href = "html/about.html" class = "index-link">О магазине</a>
                 <a href = "html/catalogue.html" class = "index-link">Каталог</a>
                 <a href = "html/contacts.html" class = "index-link">Контакты</a>
-        </nav>
+            </nav>
         </div>
         
     </header>
@@ -64,4 +71,5 @@
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
